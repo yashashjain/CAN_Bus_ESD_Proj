@@ -1,0 +1,91 @@
+*  Generated for: PrimeSim
+*  Design library name: opamp_lib
+*  Design cell name: bgr_ckt
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+.lib 'saed32nm.lib' BJT
+.param vdd=1
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 20:32:16 2022
+
+.global gnd!
+********************************************************************************
+* Library          : opamp_lib
+* Cell             : opamp
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt opamp out vd vdd in+ in-
+xm6 net83 net83 gnd! gnd! n105 w=10u l=0.4u nf=4 m=1
+xm7 net69 net69 gnd! gnd! n105 w=10u l=0.4u nf=4 m=1
+xm8 net84 net83 gnd! gnd! n105 w=10u l=0.4u nf=4 m=1
+xm9 out net69 gnd! gnd! n105 w=10u l=400n nf=4 m=1
+xm4 net69 vd vdd vdd p105 w=0.150500m l=800n nf=43 m=1
+xm5 net83 vd vdd vdd p105 w=0.150500m l=0.8u nf=43 m=1
+xm10 net84 net84 vdd vdd p105 w=0.201000m l=2u nf=67 m=1
+xm11 out net84 vdd vdd p105 w=0.201000m l=2u nf=67 m=1
+q4 net69 in+ gnd! hnpn area=4p m=1
+q1 net83 in- gnd! hnpn area=4p m=1
+c0 out gnd! c=600f
+.ends opamp
+
+********************************************************************************
+* Library          : opamp_lib
+* Cell             : bgr_ckt
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xms2 net164 net164 vdd vdd p105 w=14u l=0.8u nf=7 m=1
+xms1 net183 net58 net22 net22 p105 w=16u l=0.16u nf=8 m=1
+xms3 net58 net164 vdd vdd p105 w=14u l=0.8u nf=7 m=1
+xm1 net183 net13 vdd vdd p105 w=0.201000m l=2u nf=67 m=1
+xm2 vref_1 net13 vdd vdd p105 w=0.201000m l=2u nf=67 m=1
+xm3 vref net13 vdd vdd p105 w=0.201000m l=2u nf=67 m=1
+xm12 net136 net13 vdd vdd p105 w=30u l=0.23u nf=10 m=1
+v47 vdd gnd! dc='vdd'
+v48 net187 gnd! dc=1
+xi10 net13 net164 net187 vref_1 net183 opamp
+r17 net58 gnd! r=170k
+r16 net183 gnd! r=80k
+r15 net183 net136 r=40k
+r14 vref_1 net136 r=40k
+r13 vref_1 gnd! r=80k
+r12 vref_1 net143 r=3k
+r11 vref gnd! r=35k
+q2 net143 net143 gnd! hnpn area=0.1n m=23
+q4 net164 net183 gnd! hnpn area=4p m=1
+q1 net183 net183 gnd! hnpn area=4p m=1
+q3 net136 net136 gnd! hnpn area=0.1n m=1
+
+
+
+
+
+
+
+
+.dcOP
+.dc temp lin '51' '0' '60' name=dc
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe dc v(vref_1)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+
