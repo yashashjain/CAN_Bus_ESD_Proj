@@ -20,7 +20,14 @@ Bandgap  references  (BGR),  which  are  an integral   part   of   analog   and 
 *Keywords—Bandgap reference circuit, Analog integrated circuit, Operational amplifier,low voltage, Curvature Compensation.*
 
 ## <a name="Introduction"></a>Introduction
-The  bandgap  architecture  [1] based  on 80𝑛𝑚 BiCMOS shown in reference circuit section uses current mode principle for temperature compensation and add currents proportional to 𝑉𝐵𝐸1 and 𝑉𝑇. The operational amplifier is used to make the two voltages 𝑉𝐴and 𝑉𝐵equal thus producing a CTAT current in the nominally equal resistors R1 and R2 proportional to 𝑉𝐵𝐸. PTAT current proportional   to 𝑉𝐵𝐸1–𝑉𝐵𝐸2=𝑉𝑇𝑙𝑛𝑁 flows   through transistors  Q1  and  Q2.  
+Bandgap references (BGR) are circuits that provide a
+temperature and supply independent output voltage. Voltage
+references are among the most important building blocks in
+current analog and mixed signal circuits and are a critical
+component of any SoC. This calls for low voltage opera-
+tion, while simultaneously ensuring that the generated output
+voltage is insensitive to temperature and power supply varia-
+tions.
 
 ## Reference Circuit
 ### startup circuit
@@ -34,8 +41,48 @@ The  bandgap  architecture  [1] based  on 80𝑛𝑚 BiCMOS shown in reference c
 - Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
 - Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
 
+## OpAmp 
+### Schematic
+![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+### Symbol
+![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+## Band Gap Circuit
+In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
+### Schematic
+![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 
 
+## Design Paramters 
+RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
+
+|         Component           |      Parameter       | 
+|-----------------------------|----------------------|
+| Q1 , Q3 , Q4                | Normalized Area =1   | 
+| Q2                          |  Normalized Area =1  |                            
+| M1  , M2 , M3 , M10 , M11   | W= 200 μm, L= 2 μm   | 
+| M12                         | W= 30μm, L= 230nm    | 
+| MS2 , MS3                   | W= 14 μm, L= 800nm   |  
+| MS1                         | W= 16 μm, L= 160nm   | 
+| M4 , M5                     | W= 150 μm, L= 800nm  | 
+| M6 , M7 , M8 , M9           | W= 10 μm, L= 400nm   |  
+| R0                          |      13.5K           | 
+| R1,R2                       |       80K            | 
+| R3                          |       35K            | 
+| Rs                          |      170K            | 
+
+## Simulations
+### Power Supply Varion:
+![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+Measured bandgap voltage as a function of the power supply
+### Temperature Variation:
+![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+Measured bandgap voltage as a function of temperature with and without curvature compensation
+
+## Netlist
+Refer to the netlist of the circuits here: [Netlist](/files)
+
+## Author
+Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Science, Bangalore, India
 
 ## Acknowledgements
 - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.<br/>
