@@ -16,7 +16,7 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 
 ## <a name="Abstract"></a>Abstract
 Bandgap  references  (BGR),  which  are  an integral   part   of   analog   and   mixed   signal   integrated circuits, are circuits that provide temperature, supply and process independent  output voltage. The main challenge in  this domain  is  to  ensure  correct  operation  in  sub  1V supply  voltages  as  we  proceed  to  smaller  technology nodes.<br/>
-#### *Keywords—Bandgap reference circuit, Analog integrated circuit, Operational amplifier, low voltage, Curvature Compensation.*
+##### *Keywords—Bandgap reference circuit, Analog integrated circuit, Operational amplifier, low voltage, Curvature Compensation.*
 
 ## <a name="Introduction"></a>Introduction
 Bandgap references (BGR) are circuits that provide a temperature and supply independent output voltage. Voltage references are among the most important building blocks in current analog and mixed signal circuits and are a critical component of any SoC. This calls for low voltage operation, while simultaneously ensuring that the generated output voltage is insensitive to temperature and power supply variations.
