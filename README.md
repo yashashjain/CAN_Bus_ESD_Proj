@@ -8,7 +8,7 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 - [Tools Used](#Tools)<br/>
 - [OpAmp](#OpAmp)<br/>
 - [Band Gap Circuit](#BGR)<br/>
-- [Design Parameters](#Design Parameters)<br/>
+- [Design Parameters](#Design-Parameters)<br/>
 - [Simulations](#Simulations)<br/>
 - [Netlist](#Netlist)<br/>
 - [Acknowledgements](#Acknowledgements)<br/>
