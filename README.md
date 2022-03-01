@@ -5,9 +5,9 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 
 - [Abstract](#Abstract)<br/>
 - [Introduction](#Introduction)<br/>
-- [Tools Used](#Tools Used)<br/>
+- [Tools Used](#Tools)<br/>
 - [OpAmp](#OpAmp)<br/>
-- [Band Gap Circuit](#Band Gap Circuit)<br/>
+- [Band Gap Circuit](#BGR)<br/>
 - [Design Parameters](#Design Parameters)<br/>
 - [Simulations](#Simulations)<br/>
 - [Netlist](#Netlist)<br/>
@@ -28,7 +28,7 @@ tion, while simultaneously ensuring that the generated output
 voltage is insensitive to temperature and power supply varia-
 tions.
 
-## <a name="Tools Used"></a>Tools Used
+## <a name="Tools"></a>Tools Used
 - Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
 - Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
 
@@ -39,7 +39,7 @@ tions.
 #### *Symbol*
 ![symbol of the two-stage operational amplifier](/files/circuit_images/opamp_symbol.png)
 > Fig 2. Symbol of OpAmp.
-## <a name="Band Gap Circuit"></a>Band Gap Circuit
+## <a name="BGR"></a>Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 #### *Schematic*
 ![Schematic of the BGR circuit](/files/circuit_images/bgr_final.png)
