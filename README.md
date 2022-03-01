@@ -29,17 +29,6 @@ tion, while simultaneously ensuring that the generated output
 voltage is insensitive to temperature and power supply varia-
 tions.
 
-## Reference Circuit
-### startup circuit
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 1. Schematic of startup circuit [1].
-### OpAmp
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 2. Schematic of two stage operational amplifier [1].
-### Band Gap Reference Circuit
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 3. Schematic of the Band Gap circuit with curvature compensation [1].
-
 ## Tools Used
 - Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
 - Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
