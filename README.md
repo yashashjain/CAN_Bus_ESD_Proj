@@ -35,15 +35,15 @@ tions.
 
 ## OpAmp 
 #### *Schematic*
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_schematic.png)
+![Schematic of the two-stage operational amplifier](/files/circuit_images/opamp_schematic.png)
 > Fig 1. Schematic of OpAmp.
 #### *Symbol*
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+![symbol of the two-stage operational amplifier](/files/circuit_images/opamp_symbol.png)
 > Fig 2. Symbol of OpAmp.
 ## Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 #### *Schematic*
-![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/bgr_final.png)
+![Schematic of the BGR circuit](/files/circuit_images/bgr_final.png)
 > Fig 3. Schematic of the Band Gap circuit with curvature compensation
 
 
@@ -67,10 +67,10 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 
 ## Simulations
 #### *Power Supply Variation:*
-![Schematic of the two-stage operational amplifier [1]](/files/simulation_images/vref_vs_vdd.png)
+![Vref Vs Vdd](/files/simulation_images/vref_vs_vdd.png)
 > Fig 4. Measured bandgap voltage as a function of the power supply.
 #### *Temperature Variation:*
-![Schematic of the two-stage operational amplifier [1]](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
+![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
 > Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
 ## Netlist
