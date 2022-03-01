@@ -34,15 +34,15 @@ tions.
 - Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
 
 ## OpAmp 
-### Schematic
+#### *Schematic*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 > fig 4. Schematic of OpAmp.
-### Symbol
+#### *Symbol*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 > fig 5. Symbol of OpAmp.
 ## Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
-### Schematic
+#### *Schematic*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 > fig 6. Schematic of the Band Gap circuit with curvature compensation
 
