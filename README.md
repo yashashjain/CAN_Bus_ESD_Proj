@@ -82,8 +82,9 @@ Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Sci
 - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.<br/>
 - Cloud Based Analog IC Design Hackathon, IIT Hyderabad<br/>
 - Synopsys India<br/>
-- Sameer Durgoji, NIT Karnataka<br/>
 - Chinmay panda, IIT Hyderabad<br/>
+- Sameer Durgoji, NIT Karnataka
+
 
 ## <a name="References"></a>References
 [1] Malcovati,   P.,   et   al.   (2001).   Curvature-compensated   BiCMOS bandgap  with  1-V  supply  voltage.IEEE  Journal  of  Solid  State Circuits, 36, 1076–1081.<br/>
