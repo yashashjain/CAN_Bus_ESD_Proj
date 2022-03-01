@@ -3,19 +3,19 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 
 ## Table of content
 
-- [Abstract](https://github.com/yashashjain/BGR_Circuit/edit/main/README.md)<br/>
+- [Abstract](#Abstract)<br/>
 - [Introduction](#Introduction)<br/>
-- [Reference Circuit]()<br/>
-- [Tools Used]()<br/>
-- [OpAmp]()<br/>
-- [Band gap reference]()<br/>
-- [Design Parameters]()<br/>
-- [Simulations]()<br/>
-- [Netlist]()<br/>
-- [Acknowledgements]()<br/>
-- [References]()
+- [Reference Circuit](#Reference Circuit)<br/>
+- [Tools Used](#Tools Used)<br/>
+- [OpAmp](#OpAmp)<br/>
+- [Band Gap Circuit](#Band Gap Circuit)<br/>
+- [Design Parameters](#Design Parameters)<br/>
+- [Simulations](#Simulations)<br/>
+- [Netlist](#Netlist)<br/>
+- [Acknowledgements](#Acknowledgements)<br/>
+- [References](#References)
 
-## Abstract
+## <a name="Abstract"></a>Abstract
 Bandgap  references  (BGR),  which  are  an integral   part   of   analog   and   mixed   signal   integrated circuits, are circuits that provide temperature, supply and process independent  output voltage. The main challenge in  this domain  is  to  ensure  correct  operation  in  sub  1V supply  voltages  as  we  proceed  to  smaller  technology nodes.<br/>
 *Keywords—Bandgap reference circuit, Analog integrated circuit, Operational amplifier, low voltage, Curvature Compensation.*
 
@@ -29,25 +29,25 @@ tion, while simultaneously ensuring that the generated output
 voltage is insensitive to temperature and power supply varia-
 tions.
 
-## Tools Used
+## <a name="Tools Used"></a>Tools Used
 - Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
 - Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
 
-## OpAmp 
+## <a name="OpAmp"></a>OpAmp 
 #### *Schematic*
 ![Schematic of the two-stage operational amplifier](/files/circuit_images/opamp_schematic.png)
 > Fig 1. Schematic of OpAmp.
 #### *Symbol*
 ![symbol of the two-stage operational amplifier](/files/circuit_images/opamp_symbol.png)
 > Fig 2. Symbol of OpAmp.
-## Band Gap Circuit
+## <a name="Band Gap Circuit"></a>Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 #### *Schematic*
 ![Schematic of the BGR circuit](/files/circuit_images/bgr_final.png)
 > Fig 3. Schematic of the Band Gap circuit with curvature compensation
 
 
-## Design Paramters 
+## <a name="Design Paramters"></a>Design Paramters 
 > RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
 
 |         Component           |      Parameter       | 
@@ -65,7 +65,7 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 | R3                          |       35K            | 
 | Rs                          |      170K            | 
 
-## Simulations
+## <a name="Simulation"></a>Simulations
 #### *Power Supply Variation:*
 ![Vref Vs Vdd](/files/simulation_images/vref_vs_vdd.png)
 > Fig 4. Measured bandgap voltage as a function of the power supply.
@@ -73,20 +73,20 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 ![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
 > Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
-## Netlist
+## <a name="Netlist"></a>Netlist
 Refer to the netlist of the circuits here: [Netlist](/files/Netlists)
 
 ## Author
 Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Science, Bangalore, India
 
-## Acknowledgements
+## <a name="Acknowledgements"></a>Acknowledgements
 - Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.<br/>
 - Cloud Based Analog IC Design Hackathon, IIT Hyderabad<br/>
 - Synopsys India<br/>
 - Sameer Durgoji, NIT Karnataka<br/>
 - Chinmay panda, IIT Hyderabad<br/>
 
-## References
+## <a name="References"></a>References
 [1] Malcovati,   P.,   et   al.   (2001).   Curvature-compensated   BiCMOS bandgap  with  1-V  supply  voltage.IEEE  Journal  of  Solid  State Circuits, 36, 1076–1081.<br/>
 [2] Banba, H., et al. (1999). A CMOS bandgap reference circuit with sub 1-V operation. IEEE Journal of Solid State Circuits, 34(5), 670–674.<br/>
 [3] Leung,  K.  N.,  Mok,  P.  K.  T.  (2002).  A  sub  1-V  15-ppm/°C  CMOS bandgap  voltage  reference  without  requiring  low  threshold  voltage device. IEEE Journal of Solid-State Circuits, 37, 526–530.<br/>
