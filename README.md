@@ -32,10 +32,13 @@ tions.
 ## Reference Circuit
 ### startup circuit
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 1. Schematic of startup circuit [1].
 ### OpAmp
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 2. Schematic of two stage operational amplifier [1].
 ### Band Gap Reference Circuit
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 3. Schematic of the Band Gap circuit with curvature compensation [1].
 
 ## Tools Used
 - Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
@@ -44,21 +47,24 @@ tions.
 ## OpAmp 
 ### Schematic
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 4. Schematic of OpAmp.
 ### Symbol
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 5. Symbol of OpAmp.
 ## Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 ### Schematic
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
+> fig 6. Schematic of the Band Gap circuit with curvature compensation
 
 
 ## Design Paramters 
-RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
+> RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
 
 |         Component           |      Parameter       | 
 |-----------------------------|----------------------|
-| Q1 , Q3 , Q4                | Normalized Area =1   | 
-| Q2                          |  Normalized Area =1  |                            
+| Q1 , Q3 , Q4                | Normalized Area = 1  | 
+| Q2                          | Normalized Area = 23 |                            
 | M1  , M2 , M3 , M10 , M11   | W= 200 μm, L= 2 μm   | 
 | M12                         | W= 30μm, L= 230nm    | 
 | MS2 , MS3                   | W= 14 μm, L= 800nm   |  
@@ -71,15 +77,15 @@ RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT
 | Rs                          |      170K            | 
 
 ## Simulations
-### Power Supply Varion:
+### *Power Supply Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 Measured bandgap voltage as a function of the power supply
-### Temperature Variation:
+### *Temperature Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 Measured bandgap voltage as a function of temperature with and without curvature compensation
 
 ## Netlist
-Refer to the netlist of the circuits here: [Netlist](/files)
+Refer to the netlist of the circuits here: [Netlist](/files/Netlist)
 
 ## Author
 Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Science, Bangalore, India
