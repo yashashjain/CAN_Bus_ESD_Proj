@@ -74,7 +74,7 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 > Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
 ## Netlist
-Refer to the netlist of the circuits here: [Netlist](/files/Netlist)
+Refer to the netlist of the circuits here: [Netlist](/files/Netlists)
 
 ## Author
 Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Science, Bangalore, India
