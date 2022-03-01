@@ -8,7 +8,7 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 - [Tools Used](#Tools)<br/>
 - [OpAmp](#OpAmp)<br/>
 - [Band Gap Circuit](#BGR)<br/>
-- [Design Parameters](#Design-Parameters)<br/>
+- [Design Parameters](#Parameters)<br/>
 - [Simulations](#Simulations)<br/>
 - [Netlist](#Netlist)<br/>
 - [Acknowledgements](#Acknowledgements)<br/>
@@ -46,7 +46,7 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 > Fig 3. Schematic of the Band Gap circuit with curvature compensation
 
 
-## <a name="Design Paramters"></a>Design Paramters 
+## <a name="Paramters"></a>Design Paramters 
 > RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
 
 |         Component           |      Parameter       | 
