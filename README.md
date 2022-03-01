@@ -5,7 +5,6 @@ This repository presents the design of Sub 1-V Bandgap Reference Circuit impleme
 
 - [Abstract](#Abstract)<br/>
 - [Introduction](#Introduction)<br/>
-- [Reference Circuit](#Reference Circuit)<br/>
 - [Tools Used](#Tools Used)<br/>
 - [OpAmp](#OpAmp)<br/>
 - [Band Gap Circuit](#Band Gap Circuit)<br/>
