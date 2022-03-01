@@ -35,10 +35,10 @@ tions.
 ## <a name="OpAmp"></a>OpAmp 
 #### *Schematic*
 ![Schematic of the two-stage operational amplifier](/files/circuit_images/opamp_schematic.png)
-> Fig 1. Schematic of OpAmp.
+> Fig 1. Schematic of two stage OpAmp.
 #### *Symbol*
 ![symbol of the two-stage operational amplifier](/files/circuit_images/opamp_symbol.png)
-> Fig 2. Symbol of OpAmp.
+> Fig 2. Symbol of two stage OpAmp.
 ## <a name="BGR"></a>Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 #### *Schematic*
