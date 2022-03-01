@@ -66,10 +66,10 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 | Rs                          |      170K            | 
 
 ## Simulations
-### *Power Supply Variation:*
+#### *Power Supply Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 Measured bandgap voltage as a function of the power supply
-### *Temperature Variation:*
+#### *Temperature Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
 Measured bandgap voltage as a function of temperature with and without curvature compensation
 
