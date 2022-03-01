@@ -39,7 +39,7 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 > Fig 3. Schematic of the Band Gap circuit with curvature compensation
 
 
-## <a name="xyz"></a>Design Paramters 
+## <a name="xyz"></a>Design Parameters 
 > RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
 
 |         Component           |      Parameter       | 
