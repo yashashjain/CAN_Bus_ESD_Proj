@@ -70,7 +70,7 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 ![Schematic of the two-stage operational amplifier [1]](/files/simulation_images/vref_vs_vdd.png)
 > Fig 4. Measured bandgap voltage as a function of the power supply.
 #### *Temperature Variation:*
-![Schematic of the two-stage operational amplifier [1]](/files/simulation_images/vref_vs_temp_curvature_compensation.png)
+![Schematic of the two-stage operational amplifier [1]](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
 > Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
 ## Netlist
