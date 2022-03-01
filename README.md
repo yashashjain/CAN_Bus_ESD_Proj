@@ -36,15 +36,15 @@ tions.
 ## OpAmp 
 #### *Schematic*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 4. Schematic of OpAmp.
+> Fig 1. Schematic of OpAmp.
 #### *Symbol*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 5. Symbol of OpAmp.
+> Fig 2. Symbol of OpAmp.
 ## Band Gap Circuit
 In this circuit, all three reference circuit is included (startup circuit, OpAmp, BGR)
 #### *Schematic*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-> fig 6. Schematic of the Band Gap circuit with curvature compensation
+> Fig 3. Schematic of the Band Gap circuit with curvature compensation
 
 
 ## Design Paramters 
@@ -68,10 +68,10 @@ In this circuit, all three reference circuit is included (startup circuit, OpAmp
 ## Simulations
 #### *Power Supply Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-Measured bandgap voltage as a function of the power supply
+> Fig 4. Measured bandgap voltage as a function of the power supply.
 #### *Temperature Variation:*
 ![Schematic of the two-stage operational amplifier [1]](/files/circuit_images/opamp_symbol.png)
-Measured bandgap voltage as a function of temperature with and without curvature compensation
+> Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
 ## Netlist
 Refer to the netlist of the circuits here: [Netlist](/files/Netlist)
