@@ -50,21 +50,21 @@ Two Android Devices
 
 
 ## <a name="Design"></a>Design Stages
-![design](/files/simulation_images/vref_vs_vdd.png)
+![design](/images/1.png)
 
 ## <a name="Circuit"></a>Circuit Diagram
-![design](/files/simulation_images/vref_vs_vdd.png)
+![design](/images/2.png)
 
 
 ## <a name="Resultls"></a>Results
 #### *Sending Vehicle Simulated data through App:*
-![Vref Vs Vdd](/files/simulation_images/vref_vs_vdd.png)
+![Vref Vs Vdd](/images/3.png)
 
 #### *Bus Monitor Output through BLE App:*
-![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
+![Vref vs Temperature](/images/4.png)
 
 #### *Log Data File Saves as .txt:*
-![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
+![Vref vs Temperature](/images/5.png)
 
 
 ## <a name="Conclusion"></a>Conclusion
@@ -79,7 +79,7 @@ Got the idea of embedded system design procedure through this mini project like 
 Yashash Jain & Paul Antony, MTech Students, Indian Institute of Science, Bangalore, India
 
 ## <a name="Acknowledgements"></a>Acknowledgements
-- Prof. Haresh Dagale, Professore, IISc Bagalore <br/>
+- Prof. Haresh Dagale, Professor, IISc Bagalore <br/>
 - Koya Naresh, Project Associate, IISc Bagalore
 
 
