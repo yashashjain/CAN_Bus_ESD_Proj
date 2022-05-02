@@ -41,11 +41,11 @@ The Bluetooth receiver shall also store the bus transaction for offline analysis
 
 
 ## <a name="Components"></a>Components
-Three Tiva Launchpads
-Three MCP2551 Transceivers
-Two 120 ohms resistor
-Two Bluetooth Module (HC-05)
-One Breadboard, Jumper wires
+Three Tiva Launchpads<br/>
+Three MCP2551 Transceivers<br/>
+Two 120 ohms resistor<br/>
+Two Bluetooth Module (HC-05)<br/>
+One Breadboard, Jumper wires<br/>
 Two Android Devices
 
 
@@ -68,14 +68,10 @@ Two Android Devices
 
 
 ## <a name="Conclusion"></a>Conclusion
-A detailed implementation of CAN Bus to Bluetooth data logger is done.
-
-Through debug, we solved the problem of driving capability.
-
-Hardware implementation give the better hand on learning experience.
-
-Through this project, we realized how actually CAN Bus has important application in automotive and other industries.
- 
+A detailed implementation of CAN Bus to Bluetooth data logger is done.<br/>
+Through debug, we solved the problem of driving capability.<br/>
+Hardware implementation give the better hand on learning experience.<br/>
+Through this project, we realized how actually CAN Bus has important application in automotive and other industries.<br/>
 Got the idea of embedded system design procedure through this mini project like specification to implementation, algorithm to architecture, partitioning, design blocks,  Tiva implementation.
 
 
