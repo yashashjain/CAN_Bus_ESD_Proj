@@ -53,7 +53,9 @@ Two Android Devices
 ![design](/images/1.png)
 
 ## <a name="Circuit"></a>Circuit Diagram
-![design](/images/2.png)
+![design](/images/2_1.png)
+
+![design1](/images/6.png)
 
 
 ## <a name="Resultls"></a>Results
