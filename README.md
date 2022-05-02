@@ -4,12 +4,12 @@ This repository presents the implementation of CAN Bus to Bluetooth Data Logger 
 ## Table of content
 
 - [Introduction](#Introduction)<br/>
-- [Propsed Plan](#OpAmp)<br/>
-- [Component Used](#Tools)<br/>
-- [Design Stages](#xyz)<br/>
-- [Circuit Digram](#BGR)<br/>
-- [Results](#Simulations)<br/>
-- [Conclusion](#Netlist)<br/>
+- [Proposed Plan](#Proposed)<br/>
+- [Components](#Components)<br/>
+- [Design Stages](#Design)<br/>
+- [Circuit Digram](#Circuit)<br/>
+- [Results](#Resultls)<br/>
+- [Conclusion](#Conclusion)<br/>
 - [Acknowledgements](#Acknowledgements)<br/>
 - [References](#References)
 
@@ -22,15 +22,12 @@ For each device, the data in a frame is transmitted sequentially but in such a w
 
 Frames are received by all devices, including by the transmitting device.
 
-## <a name="OpAmp"></a>OpAmp 
+## <a name="Proposed"></a>Proposed Plan
 #### Objective:
 
 Sending simulated vehicle data through Bluetooth (CAN Master 1).<br/>
-
 Implement a Bluetooth interfaced CAN data logger/ bus monitor.<br/>
-
 Shows real time traffic on CAN bus on a Bluetooth receiver (through mobile App).<br/>
-
 Store the bus data on the Bluetooth receiver for detailed analysis.
 
 #### Implementation:
@@ -43,56 +40,59 @@ The Bluetooth receiver shall also store the bus transaction for offline analysis
 
 
 
-## <a name="Tools"></a>Tools Used
-- Synopsys Custom Compiler: This tool helped in designing various circuits at transistor level.
-- Synopsys Primewave: This tool helped in various types of simulations of the above designed circuit.
+## <a name="Components"></a>Components
+Three Tiva Launchpads
+Three MCP2551 Transceivers
+Two 120 ohms resistor
+Two Bluetooth Module (HC-05)
+One Breadboard, Jumper wires
+Two Android Devices
 
 
+## <a name="Design"></a>Design Stages
+![design](/files/simulation_images/vref_vs_vdd.png)
+
+## <a name="Circuit"></a>Circuit Diagram
+![design](/files/simulation_images/vref_vs_vdd.png)
 
 
-## <a name="xyz"></a>Design Parameters 
-> RESISTANCE VALUES AND TRANSISTOR DIMENSIONS IN BAND GAP CIRCUIT  
-
-|         Component           |      Parameter       | 
-|-----------------------------|----------------------|
-| Q1 , Q3 , Q4                | Normalized Area = 1  | 
-| Q2                          | Normalized Area = 23 |                            
-| M1  , M2 , M3 , M10 , M11   | W= 200 μm, L= 2 μm   | 
-| M12                         | W= 30μm, L= 230nm    | 
-| MS2 , MS3                   | W= 14 μm, L= 800nm   |  
-| MS1                         | W= 16 μm, L= 160nm   | 
-| M4 , M5                     | W= 150 μm, L= 800nm  | 
-| M6 , M7 , M8 , M9           | W= 10 μm, L= 400nm   |  
-| R0                          |      13.5K           | 
-| R1,R2                       |       80K            | 
-| R3                          |       35K            | 
-| Rs                          |      170K            | 
-
-## <a name="Simulation"></a>Simulations
-#### *Power Supply Variation:*
+## <a name="Resultls"></a>Results
+#### *Sending Vehicle Simulated data through App:*
 ![Vref Vs Vdd](/files/simulation_images/vref_vs_vdd.png)
-> Fig 4. Measured bandgap voltage as a function of the power supply.
-#### *Temperature Variation:*
-![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
-> Fig 5. Measured bandgap voltage as a function of temperature with curvature compensation
 
-## <a name="Netlist"></a>Netlist
-Refer to the netlist of the circuits here: [Netlist](/files/Netlists)
+#### *Bus Monitor Output through BLE App:*
+![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
+
+#### *Log Data File Saves as .txt:*
+![Vref vs Temperature](/files/simulation_images/vref_vs_temp_curvaure_compensation.png)
+
+
+## <a name="Conclusion"></a>Conclusion
+A detailed implementation of CAN Bus to Bluetooth data logger is done.
+
+Through debug, we solved the problem of driving capability.
+
+Hardware implementation give the better hand on learning experience.
+
+Through this project, we realized how actually CAN Bus has important application in automotive and other industries.
+ 
+Got the idea of embedded system design procedure through this mini project like specification to implementation, algorithm to architecture, partitioning, design blocks,  Tiva implementation.
+
 
 ## Author
-Yashash Jain, MTech in Microelectronics and VLSI Design, Indian Institute of Science, Bangalore, India
+Yashash Jain & Paul Antony, MTech Students, Indian Institute of Science, Bangalore, India
 
 ## <a name="Acknowledgements"></a>Acknowledgements
-- Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.<br/>
-- Cloud Based Analog IC Design Hackathon, IIT Hyderabad<br/>
-- Synopsys India<br/>
-- Chinmay panda, IIT Hyderabad<br/>
-- Sameer Durgoji, NIT Karnataka
+- Prof. Haresh Dagale, Professore, IISc Bagalore <br/>
+- Koya Naresh, Project Associate, IISc Bagalore
 
 
 ## <a name="References"></a>References
-[1] Malcovati,   P.,   et   al.   (2001).   Curvature-compensated   BiCMOS bandgap  with  1-V  supply  voltage.IEEE  Journal  of  Solid  State Circuits, 36, 1076–1081.<br/>
-[2] Banba, H., et al. (1999). A CMOS bandgap reference circuit with sub 1-V operation. IEEE Journal of Solid State Circuits, 34(5), 670–674.<br/>
-[3] Leung,  K.  N.,  Mok,  P.  K.  T.  (2002).  A  sub  1-V  15-ppm/°C  CMOS bandgap  voltage  reference  without  requiring  low  threshold  voltage device. IEEE Journal of Solid-State Circuits, 37, 526–530.<br/>
+[1]	en.wikipedia.org/wiki/CAN_bus<br/>
+[2]	Digital Interconnects from edwiki<br/>
+[3]	Lecture Notes {Embedded System Design by Haresh Sir}<br/>
+[4]	HC-05 Bluetooth Interfacing with TM4C123G Tiva C Launchpad – Keil uvision
+
+
 
 
